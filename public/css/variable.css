@@ -1,0 +1,93 @@
+:root {
+  /* colors */
+  --neutral-40: #fff;
+  --primary: #121528;
+  --secondary-grey-10: #ededed;
+  --secondary-grey-5: #f6f6f6;
+  --secondary-grey-20: #dadada;
+  --third-5: #ffed00;
+  --third-5-second-option: #ffde00;
+
+  /* gradiant */
+
+  --btn--primary-2-grad: linear-gradient(
+    to right,
+    rgba(0, 8, 120, 1),
+    rgb(32, 44, 213)
+  );
+
+  --btn--secondary-grad: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(249, 232, 51, 1) 0%,
+    rgba(250, 196, 59, 1) 100.2%
+  );
+  --btn--alternative-grad: linear-gradient(
+    178.1deg,
+    rgba(246, 199, 34, 1) 13%,
+    rgba(245, 149, 33, 1) 86.3%
+  );
+  --btn--primary-grad: radial-gradient(circle at 50% 50%, red, blue);
+
+  /* text size  */
+  --null-number: 1px;
+  --p: 16px;
+  --heading-1: 28px;
+  --heading-2: 32px;
+  --heading-3: 36px;
+  --heading-4: 40px;
+  --heading-5: 44px;
+  --heading-6: 48px;
+
+  /* font weigh */
+
+  --fw-1: 100;
+  --fw-2: 200;
+  --fw-3: 300;
+  --fw-4: 400;
+  --fw-5: 500;
+
+  /* size */
+  /* --maxScreen-width: 70rem; */
+  /* --maxScreen-width: 1140px; */
+  --maxScreen-width: 1340px;
+  /* --maxScreen-width: 960px; */
+  --vs: 4px;
+  --s: 8px;
+  --vm: 12px;
+  --m: 16px;
+  --l: 20px;
+  --xl: 24px;
+  --xl: 32px;
+  --xxl: 40px;
+  --largeS: 60px;
+  --xlargeS: 68px;
+
+  /* tilt */
+  --degX: 5deg;
+  --degY: -3deg;
+
+  /* trasition  */
+
+  --normal-transition: all 0.4 ease-in-out;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* animation btn */
+
+@keyframes bg-color-change {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,207 @@
+<%- include ('./partials/nav')%>
+    <!-- about -->
+
+    <!--======================= hero =============== -->
+
+    <section class="base-page-hero">
+        <div class="base-page-hero-wrap">
+            <div class="base-page-wrap-text-container">
+                <h1>
+                    <div class="breads">
+                        <span>
+                            <a href="/" class="skewOne"> home</a>
+                            <a href="/<%=serviceDetails.name%>" class="skewTwo">service/<%=serviceDetails.name%></a>
+                        </span>
+                    </div>
+                    <%= serviceDetails.pageHeader%> 
+                </h1>
+                <p>
+                    <%= serviceDetails.pageHeaderSmallText%>
+                </p>
+            </div>
+
+            <div class="base-page-wrap-image-container container-slideshow">
+                <div class="base-page-wrap-image-block-1 container-slider">
+                    <img src="<%=serviceDetails.heroImg1%>" class="itm-slide-A" alt="" />
+                    <img src="<%=serviceDetails.heroImg2%>" class="itm-slide-A" alt="" />
+                </div>
+            </div>
+            <!-- first block -->
+            <!-- second block-->
+            <div class="base-page-wrap-image-container-2 container-slideshow">
+                <div class="base-page-wrap-image-block-2 container-slider">
+                    <img src="<%=serviceDetails.heroImg3%>" class="itm-slide-b" alt="" />
+                    <img src="<%=serviceDetails.heroImg4%>" class="itm-slide-b" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======================= end hero =============== -->
+
+    <!--======================= section detail =============== -->
+
+    <section class="section-2-base">
+        <div class="section-2-base-container">
+            <div class="section-2-base-wrap">
+                <div class="section-2-base-text-container">
+                    <h1>
+                        <%= serviceDetails.title%>
+                    </h1>
+
+                    <p>
+                        <%- serviceDetails.description.replace(/\n/g, '<br />' ) %>
+                    </p>
+                </div>
+
+                <div class="tilt-imgs section-2-base-image-container">
+                    <img src="<%= serviceDetails.image %>" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=======================  end section detail =============== -->
+
+    <!-- vision  value -->
+    <div class="wrapper-bg-color">
+        <section class="vision service-page-wrap">
+            <div>
+                <!---->
+                <div class="section-service vision-container">
+                    <div class="service-container section-container">
+                        <div class="service-container-content">
+                            <h2>What we do</h2>
+                            <p>
+                                Our team of experienced consultants collaborates with you to build
+                                a strong  visual identity that truly represents who you are and
+                                what you aspire to be.
+                            </p>
+                        </div>
+
+                        <div class="services-grid-container">
+                            <a href="/service/<%= encodeURIComponent('logotype') %>"
+                                class="services service-active | grid-template-system">
+                                <div class="service-icon">
+                                    <img src="/icons/logo-design.png" class="icons" />
+                                </div>
+
+                                <h2>Logotype</h2>
+                                <p class="truncate-text">
+                                    Your brand is one-of-a-kind, and your logo should reflect that.
+                                    Our team specializes in the art of uniqueness, ensuring that
+                                    your logo stands out in a crowded market. From conceptualization
+                                    to execution, each element is carefully chosen to carve a
+                                    distinct identity for your brand.\n\n A great logo seamlessly
+                                    adapts to various contexts. Whether it's on a business card, a
+                                    website, or a billboard, our logos are designed for versatility
+                                    without compromising impact. Your brand remains recognizable and
+                                    impactful across all mediums.
+                                </p>
+                            </a>
+
+                            <!-- print-assistance done -->
+                            <a href="/service/<%= encodeURIComponent('print-assistance') %>"
+                                class="services | grid-items">
+                                <div class="service-icon">
+                                    <img src="/icons/plotter.png" class="icons" />
+                                </div>
+
+                                <h2>Print Support</h2>
+                                <p class="truncate-text">
+                                    Encountering color issues with your print? Fear not. We take the
+                                    reins, coordinating with top-notch print companies on your
+                                    behalf. Our team arranges meticulous test samples, ensuring your
+                                    brand colors shine through effortlessly.
+                                </p>
+                            </a>
+
+                            <a href="/service/<%= encodeURIComponent('brand-identity') %>" class="services">
+                                <div class="service-icon">
+                                    <img src="/icons/branding.png" class="icons" />
+                                </div>
+
+                                <h2>Brand Identity Consulting</h2>
+                                <p class="truncate-text">
+                                    We understand that one size doesn't fit all when it comes to
+                                    design. That's why our commitment goes beyond generic solutions.
+                                    With our 'Custom Solutions' approach, we immerse ourselves in
+                                    the essence of your brand, sculpting design strategies that
+                                    resonate with your unique identity.\n\n Before the first stroke,
+                                    we delve deep into understanding the DNA of your brand. What
+                                    makes it tick? What values does it hold dear? Our process
+                                    involves listening, learning, and absorbing every nuance,
+                                    ensuring our design strategies are rooted in a profound
+                                    understanding of your brand.
+                                </p>
+                            </a>
+
+                            <a href="/service/<%= encodeURIComponent('drone-videography') %>" class="services">
+                                <div class="service-icon">
+                                    <img src="/icons/drone (1).png" class="icons" alt="Drone Videography" />
+                                </div>
+                                <h2>Drone Videography</h2>
+                                <p class="truncate-text">
+                                    Providing a unique perspective with stunning drone footage for
+                                    brand storytelling
+                                </p>
+                            </a>
+
+                            <a href="/service/<%= encodeURIComponent('motion-video') %>" class="services">
+                                <div class="service-icon">
+                                    <img src="/icons/motion-graphics.png" class="icons" />
+                                </div>
+
+                                <h2>Motion Video</h2>
+                                <p class="truncate-text">
+                                    Promotional Videos Every brand has a story waiting to be told.
+                                    Our videos unravel the layers of your brand, narrating its
+                                    journey, values, and aspirations.\n\n It's our passion. Each
+                                    frame is carefully composed, every transition thoughtfully
+                                    considered. We don't just create videos; we curate visual
+                                    experiences that resonate with your audience, leaving an
+                                    indelible mark.
+                                </p>
+                            </a>
+
+                            <a href="/service/<%= encodeURIComponent('web') %>" class="services">
+                                <div class="service-icon">
+                                    <img src="/icons/data.png" class="icons" />
+                                </div>
+
+                                <h2>Web</h2>
+                                <p class="truncate-text">
+                                    Our commitment extends beyond offering a standard CMS. We
+                                    understand that your needs may vary. If you prefer, we can take
+                                    the reins and manage your CMS entirely, allowing you to focus on
+                                    what you do best while we ensure your digital presence is in
+                                    expert hands.\n\n Redefining ease, we make content updates a
+                                    breeze for everyone. Empower yourself with the simplicity of
+                                    content management, and let your website mirror the dynamic
+                                    essence of your brand. 
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- ============== call to action cta ====================-->
+    <!-- cta -->
+    <div class="cta-contact section-contenainer">
+        <div class="cta-contact-content">
+            <div class="cta-contact-text">
+                <h1>Let talk</h1>
+                <p>
+                    Ready to embark on a journey of creative collaboration?<br />
+                    We're just a message away! .
+                </p>
+            </div>
+            <a href="/contact" class="cta-contact-btn">
+                <button>click me</button>
+            </a>
+        </div>
+    </div>
+    <!-- ==============  end call to action cta ====================-->
+
+    <%- include ('./partials/footer')%>

@@ -1,0 +1,258 @@
+/* header */
+
+header {
+  background-color: var(--secondary-grey-10);
+  z-index: 5;
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  /* position: fixed; */
+  z-index: 5;
+}
+
+.header-container-content-logo-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--vm);
+}
+
+.logo-container {
+  display: block;
+  width: 120px;
+  height: 95px;
+  /* padding: 16px; */
+  background-image: url("/logo/1x/bleu-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* transition: all 0.4 ease-in-out; */
+}
+.logo-container img {
+  display: none;
+}
+
+/*  */
+
+.toggle-menu {
+  transition: transform 0.4 ease-in-out;
+}
+
+.toggle-menu span {
+  display: block;
+  background-color: rgb(0, 0, 0);
+}
+
+.toggle-menu span:nth-child(1) {
+  width: 24px;
+  height: 4px;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.toggle-menu span:nth-child(2) {
+  display: block;
+  width: 24px;
+  height: 4px;
+  border-radius: 0.5rem;
+  margin: 0.125rem 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.toggle-menu span:nth-child(3) {
+  width: 24px;
+  height: 4px;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.header-container.active .header-container-content-logo-toggle {
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.header-container.active .toggle-menu.active-toggle span:nth-child(3) {
+  transform: translateX(-0.75rem);
+  opacity: 0;
+}
+
+.header-container.active .toggle-menu.active-toggle span:nth-child(2) {
+  transform: rotate(45deg) translate(-0.0625rem, -0.123rem);
+  background-color: var(--primary);
+  width: 2rem;
+}
+
+.header-container.active .toggle-menu.active-toggle span:nth-child(1) {
+  transform: rotate(-45deg) translate(-0.0625rem, 0.123rem);
+  background-color: var(--primary);
+  width: 2rem;
+}
+
+/* on active span toggle menue*/
+
+.header-container.active {
+  /* position: absolute; */
+  width: 100%;
+  /* height: 98vh; */
+  /* top: 50%;
+  left: 50%; */
+  /* background=============*/
+  background-color: var(--secondary-grey-10);
+  /* background-color: var(--primary);  */
+  /* position: relative; */
+  /* transition: all 0.4s ease-in-out; */
+  /* position: fixed; */
+  /* border: 3px solid red; */
+  /* transform: translate(-50%, -50%); */
+  /* border-radius: 20px; */
+}
+
+.header-container.active .for-bg {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  border: 3px solid red;
+  /* border-radius: 20%; */
+}
+
+.header-container.active .logo-container {
+  width: 120px;
+  height: 95px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* inside the open menu */
+.header-container.active .nav-container {
+  display: flex;
+  flex-direction: column;
+  /* height: 100dvh; */
+  padding: var(--xl);
+}
+
+.header-container.active .nav-links {
+  display: flex;
+  flex-direction: column;
+  font-size: 48px;
+  margin: 32px 0 32px 0;
+  border-bottom: 1px solid white;
+}
+
+.header-container.active .nav-links a {
+  /* links color */
+  color: black;
+  padding: 16px;
+  transition: all 2s;
+}
+
+/* .header-container.active .nav-links a:hover {
+  background-color: ;
+} */
+
+.header-container.active .service-link {
+  margin: 28px 0px;
+}
+.header-container.active .service-link ul {
+  font-size: 32px;
+  margin: 28px 20px;
+  transition: all 0.6s;
+}
+
+/* .header-container.active .service-link ul a {
+  margin: 24px;
+} */
+
+.header-container.active .service-link ul a:last-child {
+  margin-bottom: unset;
+}
+
+.header-container.active .service-link ul {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  transition: all 0.9s;
+  font-size: 32px;
+}
+
+.header-container.active .service-link span i {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.header-container.active .service-link:hover span i {
+  opacity: 1;
+}
+
+/*######################## hover effect #####################  */
+
+/* .header-container.active .service-link ul {
+  opacity: 0;
+  transition: all 0.2 alternate;
+} */
+
+.header-container.active .service-link:hover ul {
+  height: auto;
+  opacity: 1;
+  /* background-color: var(--third-5-second-option); */
+  color: white;
+  /* color: var(--primary); */
+  font-size: 32px;
+}
+
+.nav-container {
+  height: auto !important;
+}
+
+.nav-links a {
+  /* color: var(--neutral-40); */
+  margin: 28px 0;
+}
+
+.service-link ul img {
+  width: 30px;
+  display: none;
+}
+
+.header-container.active .hedear-contact-section-image {
+  width: 320px;
+  height: 220px;
+}
+
+.header-container.active .hedear-contact-section-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hedear-contact-section-text {
+  /* color: white; */
+  font-size: 18px;
+  margin: 32px 0;
+}
+
+.hedear-contact-section-text ul a {
+  color: black;
+}
+
+.hedear-contact-section-text .socials {
+  text-align: left !important;
+  justify-content: flex-start;
+  font-size: 36px;
+}
+
+.navbtn {
+  display: none;
+}
+.nav-container {
+  display: none;
+}
+
+.active {
+  display: block;
+}

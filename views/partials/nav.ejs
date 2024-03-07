@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fav icon -->
+
+    <link rel="icon" href="/logo/kapture-fav-36.png" type="image/x-icon" sizes="16x16 32x32 48x48" />
+    <link rel="shortcut icon" href="/logo/kapture-fav.png" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo/kapture-fav-36.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo/kapture-fav-16.png" />
+
+    <!-- end fav icon -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+
+    <!-- SEO-related meta tags -->
+    <meta name="description"
+        content="Elevate Your Brand with Breathtaking Graphics, Dynamic Motion Videos, and Aerial Perspectives. Let Your Identity Soar Above the Rest." />
+    <meta name="keywords" content="graphic design, motion graphics, branding, drone video, web design" />
+    <meta name="author" content="Kapture design studio" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+    <!-- Social media meta tags -->
+    <meta property="og:title" content="Your Website Title" />
+    <meta property="og:description"
+        content="Elevate Your Brand with Breathtaking Graphics, Dynamic Motion Videos, and Aerial Perspectives. Let Your Identity Soar Above the Rest." />
+    <meta property="og:image" content="URL to your main image for sharing" />
+    <meta property="og:url" content="URL of your website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <title>
+        <%= title %>
+    </title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="head">
+        <header>
+            <div class="for-bg">
+                <div class="header-container">
+                    <div class="header-container-content-logo-toggle">
+                        <div class="logo-container">
+                            <div class="logo">
+                                <a href="/">
+                                    <img src="/logo/bleu-logo-01.svg" alt="Kapture-design-logo" /></a>
+                            </div>
+                        </div>
+
+                        <div class="toggle-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="nav-container">
+                        <nav class="nav-links">
+                            <a href="/">Home</a>
+                            <div class="service-link">
+                                <a href="#">Services
+                                    <span> <i class="fa-solid fa-chevron-down"></i></span>
+                                </a>
+                                <ul id="intro-menu" class="">
+                                    <div class="col-1">
+                                        <a href="/service/<%= encodeURIComponent('logotype')%>">
+                                            <img src="/icons/logo-design.png" alt="" />
+                                            <li>Logotype</li>
+                                        </a>
+
+                                        <a href="/service/<%= encodeURIComponent('motion-video') %>">
+                                            <img src="/icons/motion-graphics.png" alt="" />
+                                            <li>Motion design</li>
+                                        </a>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="/service/<%= encodeURIComponent('print-assistance') %>">
+                                            <img src="/icons/plotter.png" alt="" />
+                                            <li>Print Support</li>
+                                        </a>
+
+                                        <a href="/service/<%= encodeURIComponent('drone-videography') %>">
+                                            <img src="/icons/pin.png" alt="" />
+                                            <li>Drone video</li>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <a href="/service/<%= encodeURIComponent('brand-identity') %>">
+                                            <img src="/icons/branding.png" alt="" />
+                                            <li>Brand Identity Consulting</li>
+                                        </a>
+
+                                        <a href="/service/<%= encodeURIComponent('web') %>">
+                                            <img src="/icons/data.png" alt="" />
+                                            <li>Web</li>
+                                        </a>
+                                    </div>
+                                </ul>
+                            </div>
+                            <!-- <a href="">Case study</a> -->
+                            <a href="/about">About</a>
+                            <a href="/contact">Contact</a>
+                        </nav>
+
+                        <div class="hedear-contact-section">
+                            <div class="hedear-contact-section-image">
+                                <img src="/imagesReady/contactImage.png" alt="" />
+                            </div>
+                            <div class="hedear-contact-section-text">
+                                <h2>Contact</h2>
+
+                                <ul>
+                                    <li>DunfermlineKY12 7JE</li>
+                                    <li><a href="tel:+447342798540">07342798540</a></li>
+                                    <li>
+                                        <a
+                                            href="mailto:info@kapturedesignstudio.co.uk">info@kapturedesignstudio.co.uk</a>
+                                    </li>
+
+                                    <!-- 
+                                    <div class="socials">
+                                        <a href="">
+                                            <li><i class="fa-brands fa-instagram"></i></li>
+                                        </a>
+                                        <a href="">
+                                            <li><i class="fa-brands fa-x-twitter"></i></li>
+                                        </a>
+                                        <a href="">
+                                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                                        </a>
+                                    </div> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/contact" class="navbtn">Get in touch</a>
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+
+</html>

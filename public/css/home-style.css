@@ -1,0 +1,287 @@
+/* ############### hero ###################*/
+
+.section-container {
+  max-width: var(--maxScreen-width);
+  margin: var(--xxl) 0;
+  margin: auto;
+  padding: var(--xl);
+}
+
+.hero {
+  /* border: 1px solid blueviolet; */
+  padding: var(--xxl);
+  background-color: var(--secondary-grey-5);
+  /* margin: var(--xl) 0; */
+}
+
+.hero-content {
+  width: 90%;
+  margin: auto;
+}
+
+.hero-content-intro {
+  /* height: 40vh; */
+  display: flex;
+  flex-direction: column;
+  /* padding: 60px; */
+  animation: all 0.5s ease-in-out;
+}
+
+.hero-content-intro-big-text {
+  font-size: var(--heading-1);
+  /* font-weight: 900; */
+}
+
+.hero-content-intro-small-text {
+  margin: var(--m) 0;
+  font-size: var(--p);
+}
+
+/* .hero-content-intro-img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+} */
+
+.hero-content-intro img {
+  display: block;
+  width: 364px;
+  text-align: center;
+  display: none;
+}
+
+.hero-content-intro-small-btn a {
+  /* width: 128px; */
+  display: inline-block;
+  border: none;
+  background-image: var(--btn--primary-2-grad);
+  background-size: 300% 300%;
+  padding: 10px 20px;
+  border-radius: 28px;
+  color: white;
+  animation: bg-color-change 5s linear infinite alternate;
+  margin-bottom: var(--m);
+  /* margin-top: var(--m); */
+}
+
+/* mediaque */
+/* ############### end hero ###################*/
+
+/* ############### services cards ###################*/
+
+.service-container-content {
+  width: 80%;
+  margin: var(--xl) auto;
+  text-align: center;
+}
+
+.service-container-content h2 {
+  font-size: var(--heading-1);
+  font-weight: var(--fw-4);
+}
+
+.service-container-content p {
+  margin: auto;
+  width: 65%;
+
+  font-size: var(--p);
+
+  /* margin: var(--m); */
+}
+
+.services p {
+  margin: var(--s) auto;
+}
+
+.grid-template-system,
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+  align-self: stretch;
+  /* border: 1px solid red; */
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 0.3s;
+}
+
+/* .grid-items, */
+.services-grid-container {
+  display: grid;
+  grid-template-columns: 280px;
+  grid-auto-rows: 308px;
+  gap: 16px;
+  justify-content: center;
+  transition: all 0.3s;
+  /* margin: var(--xl) 0; */
+}
+
+.services-grid-container a {
+  color: var(--primary);
+}
+.service-active {
+  border: 2px solid var(--primary);
+  transition: all 0.3s;
+}
+.icons {
+  width: 52px;
+}
+
+/* ############### ends services cards ###################*/
+
+/* ############### section 3 ###################*/
+
+.sec-3-wrapper .carousel {
+  /* white-space: nowrap; */
+  width: 400px;
+  /* border: 1px solid black; */
+  margin: 40px auto;
+  /* background-color: var(--secondary-grey-5); */
+}
+
+.section-3 {
+  /* indice-1 */
+  padding-top: 30px;
+  position: relative;
+  /* height: 750px; */
+  margin-bottom: 20px;
+  background-color: var(--secondary-grey-5);
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  overflow: hidden;
+
+  height: 750px;
+  /* border: 1px solid greenyellow; */
+  position: relative;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* width: calc(100% -373px); */
+  /* margin-left: 16px; */
+  /* display: flex; */
+  transition: all 0.5s;
+  /* border: 1px solid red; */
+  opacity: 0;
+  margin: auto;
+}
+
+.slide.slide-active {
+  opacity: 1;
+  transform: translate(0);
+}
+.slide.slide-next {
+  transform: translate(100%);
+}
+.slide.slide-last {
+  transform: translate(-100%);
+}
+
+.section-3-text-block {
+  width: 90%;
+  padding: 12px;
+  text-align: center;
+  margin: auto;
+
+  /* border: 1px solid greenyellow; */
+}
+
+.section-3-image-block img {
+  display: block;
+  width: 373px;
+  margin: auto;
+  /* border: 1px solid greenyellow; */
+}
+
+/* .img-for-sections */
+/* ############### end section 3 ###################*/
+/* ############### section 4 ###################*/
+
+.section-4 {
+  border: 1px solid rgb(0, 98, 255);
+  height: 1000px;
+  display: none;
+}
+
+.section-4-content {
+  text-align: center;
+}
+
+.section-4-slider {
+  margin: var(--xl) auto;
+  border: 1px solid red;
+}
+
+.center {
+  width: 80%;
+
+  border: 1px solid greenyellow;
+}
+.section-4-image-block img {
+  width: 379px;
+  height: 407px;
+  object-fit: cover;
+  border-radius: 28px;
+}
+
+/* ############### end section 4 ###################*/
+
+/* ############### cta section  ###################*/
+
+.cta-contact {
+  margin: 60px auto;
+  max-width: var(--maxScreen-width);
+}
+.cta-contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+
+  width: 379px;
+  height: 407px;
+  border-radius: 30px;
+  margin: auto;
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.cta-contact-btn button {
+  width: 128px;
+  border: none;
+  background-image: var(--btn--secondary-grad);
+  background-size: 300% 300%;
+  padding: 12px;
+  border-radius: 28px;
+  color: var(--primary);
+  animation: bg-color-change 5s linear infinite alternate;
+  margin: var(--m) 0;
+}
+
+footer ul a {
+  color: black;
+}
+.footer-copyright {
+  background-color: white;
+}
+/* ############### end cta section  ###################*/
+
+/* trunk text */
+
+.truncate-text {
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+}

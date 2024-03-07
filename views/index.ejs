@@ -1,0 +1,306 @@
+<%- include('./partials/nav')%>
+
+    <main>
+        <!-- ============== hero ====================-->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-content-intro">
+                        <div class="hero-cont-intro-group-text">
+                            <div class="hero-content-intro-big-text">
+                                <h1>
+                                    <span>Capturing Your Vision, </span>
+                                    <!-- <span> Crafting Our Artistry,</span> -->
+                                    <span> Telling Your Story.</span>
+                                </h1>
+                            </div>
+                            <div class="hero-content-intro-small-text">
+                                <p>
+                                    Elevate your brand with breathtaking graphics, dynamic motion
+                                    videos, and aerial perspectives. Let your identity soar above
+                                    the rest.
+                                </p>
+                            </div>
+
+                            <div class="hero-content-intro-small-btn">
+                                <a class="StandardBtn" href="/contact">Let's begin</a>
+                            </div>
+                        </div>
+                        <!-- <div class="hero-content-intro-img"> -->
+                        <img src="/imagesReady/drawing-girl-ig-home.png" alt="kapture-home-image-illustation" />
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============== end hero ====================-->
+
+        <!-- ============== section 2 services ====================-->
+        <section class="section-container">
+            <div class="service-">
+                <div class="service-container section-service">
+                    <div class="service-container-content">
+                        <h2>What we do</h2>
+                        <p>
+                            Our team of experienced consultants collaborates with you to build a
+                            strong  visual identity that truly represents who you are and what
+                            you aspire to be.
+                        </p>
+                    </div>
+
+                    <div class="services-grid-container">
+                        <a href="/service/<%= encodeURIComponent('logotype') %>"
+                            class="services service-active | grid-template-system">
+                            <div class="service-icon">
+                                <img src="/icons/logo-design.png" class="icons" />
+                            </div>
+
+                            <h2>Logotype</h2>
+                            <p class="truncate-text">
+                                Your brand is one-of-a-kind, and your logo should reflect that.
+                                Our team specializes in the art of uniqueness, ensuring that your
+                                logo stands out in a crowded market. From conceptualization to
+                                execution, each element is carefully chosen to carve a distinct
+                                identity for your brand.\n\n A great logo seamlessly adapts to
+                                various contexts. Whether it's on a business card, a website, or a
+                                billboard, our logos are designed for versatility without
+                                compromising impact. Your brand remains recognizable and impactful
+                                across all mediums.
+                            </p>
+                        </a>
+
+                        <!-- print-assistance done -->
+                        <a href="/service/<%= encodeURIComponent('print-assistance') %>" class="services | grid-items">
+                            <div class="service-icon">
+                                <img src="/icons/plotter.png" class="icons" />
+                            </div>
+
+                            <h2>Print Support</h2>
+                            <p class="truncate-text">
+                                Encountering color issues with your print? Fear not. We take the
+                                reins, coordinating with top-notch print companies on your behalf.
+                                Our team arranges meticulous test samples, ensuring your brand
+                                colors shine through effortlessly.
+                            </p>
+                        </a>
+
+                        <a href="/service/<%= encodeURIComponent('brand-identity') %>" class="services">
+                            <div class="service-icon">
+                                <img src="/icons/branding.png" class="icons" />
+                            </div>
+
+                            <h2>Brand Identity Consulting</h2>
+                            <p class="truncate-text">
+                                We understand that one size doesn't fit all when it comes to
+                                design. That's why our commitment goes beyond generic solutions.
+                                With our 'Custom Solutions' approach, we immerse ourselves in the
+                                essence of your brand, sculpting design strategies that resonate
+                                with your unique identity.\n\n Before the first stroke, we delve
+                                deep into understanding the DNA of your brand. What makes it tick?
+                                What values does it hold dear? Our process involves listening,
+                                learning, and absorbing every nuance, ensuring our design
+                                strategies are rooted in a profound understanding of your brand.
+                            </p>
+                        </a>
+
+                        <a href="/service/<%= encodeURIComponent('drone-videography') %>" class="services">
+                            <div class="service-icon">
+                                <img src="/icons/drone (1).png" class="icons" alt="Drone Videography" />
+                            </div>
+                            <h2>Drone Videography</h2>
+                            <p class="truncate-text">
+                                Providing a unique perspective with stunning drone footage for
+                                brand storytelling
+                            </p>
+                        </a>
+
+                        <a href="/service/<%= encodeURIComponent('motion-video') %>" class="services">
+                            <div class="service-icon">
+                                <img src="/icons/motion-graphics.png" class="icons" />
+                            </div>
+
+                            <h2>Motion Video</h2>
+                            <p class="truncate-text">
+                                Promotional Videos Every brand has a story waiting to be told. Our
+                                videos unravel the layers of your brand, narrating its journey,
+                                values, and aspirations.\n\n It's our passion. Each frame is
+                                carefully composed, every transition thoughtfully considered. We
+                                don't just create videos; we curate visual experiences that
+                                resonate with your audience, leaving an indelible mark.
+                            </p>
+                        </a>
+
+                        <a href="/service/<%= encodeURIComponent('web') %>" class="services">
+                            <div class="service-icon">
+                                <img src="/icons/data.png" class="icons" />
+                            </div>
+
+                            <h2>Web</h2>
+                            <p class="truncate-text">
+                                Our commitment extends beyond offering a standard CMS. We
+                                understand that your needs may vary. If you prefer, we can take
+                                the reins and manage your CMS entirely, allowing you to focus on
+                                what you do best while we ensure your digital presence is in
+                                expert hands.\n\n Redefining ease, we make content updates a
+                                breeze for everyone. Empower yourself with the simplicity of
+                                content management, and let your website mirror the dynamic
+                                essence of your brand. 
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============== end section 2 services ====================-->
+
+        <!-- ============== section 3 ====================-->
+
+        <section class="section-3">
+            <div class="sec-3-wrapper">
+                <div class="carousel slider">
+                    <!-- one  right -->
+                    <div class="slide section3-container-all img1-cont">
+                        <div class="slide-content">
+                            <div class="section-3-content">
+                                <div class="section-3-text-block block-2-right">
+                                    <h2>How you tell your story.</h2>
+                                    <p>
+                                        Explore our refined methodology, crafted through years of
+                                        experience. We start by understanding your needs, match you
+                                        with experts, and closely collaborate for open communication
+                                        and superior results. Your success is our priority, and our
+                                        professional yet approachable approach delivers tailored
+                                        solutions for your business goals.
+                                    </p>
+                                </div>
+
+                                <div class="section-3-image-block tilt-imgs bk-img">
+                                    <img src="/imagesReady//astro-cut-out-images-.png" class="img-for-sections"
+                                        alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second  left -->
+
+                    <div class="slide section3-container-all">
+                        <div class="slide-content">
+                            <div class="section-3-content">
+                                <div class="section-3-text-block block-2-left">
+                                    <h2>UX, UI Prototyping</h2>
+                                    <p>
+                                        Prototyping is the blueprint for interaction. It's the bridge
+                                        between static design concepts and the fluid, dynamic
+                                        experience your users will encounter. Our prototyping process
+                                        is a meticulous journey, mapping out every click, swipe, and
+                                        interaction to ensure a seamless user experience.<br /><br />
+                                        We offer to bring your concepts to life. It's one thing to
+                                        envision a design on paper; it's another to interact with it.
+                                        Our prototypes provide a tangible visualization of the user
+                                        interface, allowing stakeholders to see and experience the
+                                        design in its intended environment.
+                                    </p>
+                                </div>
+
+                                <div class="section-3-image-block tilt-imgs">
+                                    <img src="/imagesReady/prototyp-girl-cut-out-images-.png"
+                                        class="tilt-img img-for-sections" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- third  right-->
+                    <div class="slide section3-container-all">
+                        <div class="slide-content">
+                            <div class="section-3-content">
+                                <div class="section-3-text-block block-2-right">
+                                    <h2>Telling Your Story.</h2>
+                                    <p>
+                                        Whether your project is just in the conceptual stage or you
+                                        need support for an initiative already underway, we are here
+                                        to help you kick-start your path to success.
+                                    </p>
+                                </div>
+
+                                <div class="section-3-image-block tilt-imgs">
+                                    <img src="/imagesReady/project-cut-out-images-.png"
+                                        class="tilt-img img-for-sections" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fourth  left-->
+
+                    <div class="slide section3-container-all">
+                        <div class="slide-content">
+                            <div class="section-3-content">
+                                <div class="section-3-text-block block-2-left">
+                                    <h2>Where innovation knows no bounds</h2>
+                                    <p>
+                                        We seamlessly blend creativity with functionality, ensuring
+                                        your vision is not just captured but amplified through our
+                                        expertly crafted services. we don't just offer services; we
+                                        offer a gateway to unleashing your brand's full potential.
+                                    </p>
+                                </div>
+
+                                <div class="section-3-image-block tilt-imgs">
+                                    <img src="/imagesReady/inovatingcut-out-images-.png"
+                                        class="tilt-img img-for-sections" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============== end section 3 ====================-->
+
+        <!-- ============== section 4 not active yet ====================-->
+
+        <section class="section-4 cases-study">
+            <div class="section-4-content">
+                <div class="">
+                    <h2>Case Study</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
+                        delectus eaque odit esse autem harum consequuntur asperiores voluptate
+                        assumenda ut.
+                    </p>
+                </div>
+
+                <div class="section-4-slider">
+                    <div class="center">
+                        <div class="section-4-image-block">
+                            <img src="" class="tilt-img img-for-sections" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============== end section 4 not active yet ====================-->
+        <!-- end section 4 -->
+
+        <!-- ============== call to action cta ====================-->
+        <!-- cta -->
+        <div class="cta-contact section-contenainer">
+            <div class="cta-contact-content">
+                <div class="cta-contact-text">
+                    <h1>Let talk</h1>
+                    <p>
+                        Ready to embark on a journey of creative collaboration?<br />
+                        We're just a message away! .
+                    </p>
+                </div>
+                <a href="/contact" class="cta-contact-btn">
+                    <button>click me</button>
+                </a>
+            </div>
+        </div>
+        <!-- ==============  end call to action cta ====================-->
+    </main>
+
+    <%- include('./partials/footer')%>
