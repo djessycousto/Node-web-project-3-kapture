@@ -15,5 +15,13 @@
     "start": "nodemon"
   },
   "author": "jessy cousto",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djessycousto/Node-web-project-3-kapture.git"
+  },
+  "bugs": {
+    "url": "https://github.com/djessycousto/Node-web-project-3-kapture/issues"
+  },
+  "homepage": "https://github.com/djessycousto/Node-web-project-3-kapture#readme"
 }
