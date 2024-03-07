@@ -28,10 +28,15 @@
   display: none;
 }
 
+.base-page-wrap-image-container img:nth-child(1) {
+  margin: 16px 0;
+}
+
 .base-page-wrap-image-container img:nth-child(1),
 .base-page-wrap-image-container img:nth-child(2) {
   width: 350px;
   display: block;
+  border-radius: 20px;
   /* margin: 16px auto; */
 }
 

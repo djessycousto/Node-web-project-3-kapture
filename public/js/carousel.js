@@ -61,12 +61,12 @@ export function slideShow() {
 
   window.addEventListener("resize", () => {
     const screenWidth = window.innerWidth;
-    window.location.reload();
 
     if (screenWidth >= 670) {
       // Stop the interval if the screen is >= 670
       clearInterval(interval);
       interval = null; // Reset interval variable
+      window.location.reload();
 
       // Remove the class when the screen is >= 670
       for (let i = 0; i < slides.length; i++) {
