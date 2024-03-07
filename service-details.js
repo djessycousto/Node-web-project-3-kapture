@@ -100,7 +100,7 @@ const serviceDetails = [
     title: "Brand Stories Unveiled",
     description:
       "Every brand has a story waiting to be told. Our videos unravel the layers of your brand, narrating its journey, values, and aspirations.\n\n It's our passion. Each frame is carefully composed, every transition thoughtfully considered. We don't just create videos; we curate visual experiences that resonate with your audience, leaving an indelible mark. ",
-    image: "/imagesReady/MotionVideo/logopresetation.jpeg",
+    image: "/imagesReady/MotionVideo/prototyp-girl-cut-out-images-.jpeg",
   },
 
   // #2 web // done
