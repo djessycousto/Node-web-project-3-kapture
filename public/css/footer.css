@@ -18,9 +18,14 @@ footer {
   margin: 32px 0;
 }
 
+.footer-links ul li {
+  line-height: 1.55;
+}
+
 .footer-links-1child {
-  margin: 2px 0;
+  margin: 8px 0;
   font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .footer-links ul a {

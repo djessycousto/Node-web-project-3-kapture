@@ -64,7 +64,10 @@
   /* service */
 
   .services-grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(280px, 280px)
+    ); /* change this to percentages */
   }
 
   /* section 3  an isue to fix#############*/
@@ -111,16 +114,13 @@
     margin: auto;
   }
   .section-3-content {
-    max-width: var(--maxScreen-width);
     /* width: 100%; */
+    max-width: var(--maxScreen-width);
     display: flex;
     padding: var(--xl);
-    /* border: 1px solid rgb(0, 0, 0); */
+
     padding: 40px;
     margin: auto;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* background-color: aqua; */
   }
 
   .section-3-content:nth-child(even) {
